@@ -4,40 +4,37 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dymanic SAS | Plataforma empresarial para inventario y facturación</title>
-  <meta name="description" content="Dymanic SAS centraliza inventario, facturación electrónica DIAN y analítica con foco empresarial para pymes de Latinoamérica." />
+  <title>Dymanic SAS | Inventario y Facturación DIAN</title>
+  <meta name="description" content="Inventario y facturación DIAN con estándar de producción para una operación empresarial segura y lista para despliegue." />
   <meta name="color-scheme" content="light" />
-
-  <!-- CSP estricta sin inline JS/CSS -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self' https://images.pexels.com https://github.com data:; font-src https://fonts.gstatic.com; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self' https://lh3.googleusercontent.com data:; font-src https://fonts.gstatic.com; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content" />
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   <meta http-equiv="Permissions-Policy" content="accelerometer=(), autoplay=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), xr-spatial-tracking=()" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <header id="mainHeader" aria-label="Barra principal">
-    <div class="nav-wrap">
-      <a href="#inicio" class="brand" aria-label="Dymanic SAS, ir al inicio">
-        <img src="logo_dymanic.png" alt="Logo Dymanic SAS" />
-        <span>Dymanic SAS</span>
-      </a>
+  <header class="topbar" aria-label="Barra principal">
+    <div class="container nav-row">
+      <a class="brand" href="#inicio" aria-label="Dymanic SAS, ir al inicio">Dymanic SAS</a>
 
-      <button class="menu-toggle" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">☰</button>
+      <button class="menu-toggle" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú principal">
+        Menú
+      </button>
 
       <nav id="mainNav" aria-label="Navegación principal">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#modulos">Módulos</a></li>
-          <li><a href="#seguridad">Seguridad</a></li>
-          <li><a href="#equipo">Equipo</a></li>
+        <ul class="nav-list">
+          <li><a class="nav-link nav-link--active" href="#inicio" aria-current="page">Inicio</a></li>
+          <li><a class="nav-link" href="#modulos">Módulos</a></li>
+          <li><a class="nav-link" href="#seguridad">Seguridad</a></li>
+          <li><a class="nav-link" href="#equipo">Equipo</a></li>
           <li>
-            <a class="btn btn-primary" href="https://github.com/camilogamboa2024/dymanic-sas-piloto" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
+            <a class="repo-button" href="https://github.com/camilogamboa2024/dymanic-sas-piloto" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
           </li>
         </ul>
       </nav>
@@ -45,90 +42,219 @@
   </header>
 
   <main id="contenido">
-    <section class="section hero" id="inicio">
-      <div>
-        <span class="badge">SaaS Empresarial</span>
-        <h1>Inventario y facturación DIAN con estándar de producción.</h1>
-        <p class="lead">Esta versión elimina inline CSS/JS para permitir CSP estricta, mejora mantenibilidad y deja una guía exacta para despliegue seguro en Nginx, Cloudflare y Vercel.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#seguridad">Ver controles de seguridad</a>
-          <a class="btn btn-outline" href="docs/SECURITY_PRODUCTION_CHECKLIST.md">Checklist de producción</a>
+    <section class="hero-section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="hero-badge">DIAN COMPLIANT 2024</span>
+          <h1 class="hero-title">
+            <span class="hero-line">Inventario y</span>
+            <span class="hero-line">facturación <span class="hero-highlight">DIAN</span></span>
+            <span class="hero-line">con estándar de</span>
+            <span class="hero-line">producción.</span>
+          </h1>
+          <p class="hero-description">Soberanía tecnológica para su empresa. Gestión de activos de alto rendimiento con validación inmediata ante la DIAN y arquitectura de grado militar.</p>
+
+          <div class="hero-actions">
+            <a class="primary-cta" href="#seguridad">Ver controles de seguridad</a>
+            <a class="secondary-cta" href="docs/SECURITY_PRODUCTION_CHECKLIST.md">Checklist de producción</a>
+          </div>
         </div>
-        <div class="stats" aria-label="Indicadores de valor">
-          <article class="stat"><strong>40%</strong><span>Menos tiempo en gestión de stock</span></article>
-          <article class="stat"><strong>25%</strong><span>Optimización en reposición</span></article>
-          <article class="stat"><strong>CSP Strict</strong><span>Sin inline scripts ni estilos</span></article>
+
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-U1sPd7JHOfhgBmPmSVP8-eVeCeJyfs7_cehZ352uzr2H_E3S5UE5lQ7QQRQL_13oZxfZcllPWkFLEQAEWFEGuq5SmxmcHenfjqEKn0n-2kf-EDHZdzaVskYvUWoHbrbJ9cpO3lCHNKErJZZa0H-69SzLF_rSEEe10GcdZCVCbLBWcpXsJ5XvtSHioSp0cmVwePAfW9AEnw8hrL5NMOam7jvshOL0AetgKMv6YZtvOkN8rWox1wd-GKUBTuC_OxMEKmeEg46J2sY"
+              alt="Dashboard interface"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
         </div>
       </div>
-
-      <aside class="hero-card" aria-label="Imagen de operación logística">
-        <img src="https://images.pexels.com/photos/3182830/pexels-photo-3182830.jpeg" alt="Equipo gestionando operación logística" loading="eager" decoding="async" />
-      </aside>
     </section>
 
-    <section class="section" id="modulos">
-      <h2>Módulos clave de la plataforma</h2>
-      <p class="subtitle">Arquitectura visual y de contenido diseñada para comunicar valor de negocio sin sacrificar seguridad de front-end.</p>
-      <div class="grid-3">
-        <article class="panel">
-          <h3>stock_pro</h3>
-          <p>Gestión de SKU, lotes, mínimos operativos y alertas automáticas para control continuo del inventario.</p>
-        </article>
-        <article class="panel">
-          <h3>factura_lite</h3>
-          <p>Emisión y validación de facturas electrónicas con integración orientada al flujo regulatorio DIAN.</p>
-        </article>
-        <article class="panel">
-          <h3>reportes_kpi</h3>
-          <p>Tableros de rotación, ventas y márgenes para decisiones de compra basadas en datos.</p>
-        </article>
+    <section class="metrics-section" aria-labelledby="metricas-title">
+      <div class="container">
+        <h2 class="sr-only" id="metricas-title">Indicadores de valor</h2>
+        <div class="metric-grid">
+          <article class="metric-card">
+            <div class="metric-value">40%</div>
+            <h3>Reducción de Tiempo</h3>
+            <p>Optimización radical en la gestión de stock mediante algoritmos de predicción de demanda.</p>
+          </article>
+
+          <article class="metric-card">
+            <div class="metric-value">25%</div>
+            <h3>Reposición Inteligente</h3>
+            <p>Automatización del ciclo de vida del producto, minimizando el capital inmovilizado.</p>
+          </article>
+
+          <article class="metric-card metric-card--security">
+            <div class="metric-security-head">
+              <svg class="metric-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2l7 3v6c0 4.97-3.05 9.29-7 11-3.95-1.71-7-6.03-7-11V5l7-3zm0 3.22L7 7.14v3.82c0 3.67 2.14 6.95 5 8.36 2.86-1.41 5-4.69 5-8.36V7.14l-5-1.92z" fill="currentColor"/>
+              </svg>
+              <div class="metric-security-title">CSP Strict</div>
+            </div>
+            <h3>Zero Inline Scripts</h3>
+            <p>Arquitectura blindada. Cumplimiento total de políticas de seguridad para entornos críticos.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="seguridad">
-      <h2>Controles de seguridad implementados</h2>
-      <p class="subtitle">Sin humo: controles aplicados en código + guía operativa para despliegue productivo.</p>
-      <div class="grid-3">
-        <article class="panel">
-          <h3>Navegador</h3>
-          <ul class="security-list">
-            <li>CSP estricta con <code>script-src 'self'</code> y sin inline.</li>
-            <li><code>Referrer-Policy</code> y <code>Permissions-Policy</code> reforzadas.</li>
-            <li>Bloqueo de mixto/inseguro y superficies de embed.</li>
-          </ul>
-        </article>
-        <article class="panel">
-          <h3>Enlaces y contenido</h3>
-          <ul class="security-list">
-            <li><code>rel="noopener noreferrer"</code> en externos con nueva pestaña.</li>
-            <li>Recursos estáticos locales para CSS y JS.</li>
-            <li>Dependencias remotas mínimas y explícitas.</li>
-          </ul>
-        </article>
-        <article class="panel">
-          <h3>QA de seguridad</h3>
-          <ul class="security-list">
-            <li>Checklist de despliegue por plataforma incluido en <code>docs/</code>.</li>
-            <li>Plan de validación con comandos concretos y criterios de salida.</li>
-            <li>Matriz de endurecimiento para operación continua.</li>
-          </ul>
-        </article>
+    <section class="modules-section" id="modulos">
+      <div class="container">
+        <div class="section-copy">
+          <h2>Módulos integrados para la soberanía operativa</h2>
+          <p>Cada componente ha sido diseñado para interactuar sin fricciones en el ecosistema Dymanic.</p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="bento-card bento-card--primary">
+            <div class="module-icon-box module-icon-box--light">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 3h14a2 2 0 0 1 2 2v3H3V5a2 2 0 0 1 2-2zm-2 7h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9zm4 3v2h10v-2H7z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Inventario Maestro</h3>
+            <p>Control total multialmacén con trazabilidad por lotes y serialización avanzada.</p>
+
+            <ul class="module-points">
+              <li>SKU Dinámico</li>
+              <li>Alertas de Reorden</li>
+              <li>Valoración Real-Time</li>
+            </ul>
+
+            <div class="hub-mark" aria-hidden="true">
+              <span class="hub-mark__core"></span>
+              <span class="hub-mark__node hub-mark__node--top"></span>
+              <span class="hub-mark__node hub-mark__node--left"></span>
+              <span class="hub-mark__node hub-mark__node--right"></span>
+            </div>
+          </article>
+
+          <article class="bento-card bento-card--wide">
+            <div class="module-icon-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 2h8l4 4v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V7h3.5L14 3.5zM8 11h8v1.5H8V11zm0 3h8v1.5H8V14zm0 3h5v1.5H8V17z" fill="currentColor"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Facturación Electrónica DIAN</h3>
+              <p>Emisión y validación previa en milisegundos. Integración directa sin intermediarios.</p>
+            </div>
+          </article>
+
+          <article class="bento-card bento-card--mini">
+            <svg class="mini-icon mini-icon--cyan" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 17h2V9H5v8zm6 0h2V5h-2v12zm6 0h2V12h-2v5zM4 20h16v2H4z" fill="currentColor"/>
+            </svg>
+            <h4>Analytics Premium</h4>
+          </article>
+
+          <article class="bento-card bento-card--mini">
+            <svg class="mini-icon mini-icon--cyan" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M16 11c1.66 0 2.99-1.57 2.99-3.5S17.66 4 16 4s-3 1.57-3 3.5S14.34 11 16 11zm-8 0c1.66 0 2.99-1.57 2.99-3.5S9.66 4 8 4 5 5.57 5 7.5 6.34 11 8 11zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.96 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="currentColor"/>
+            </svg>
+            <h4>Gestión CRM</h4>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="equipo">
-      <h2>Equipo</h2>
-      <p class="subtitle">Perfiles enlazados de forma segura para revisar historial técnico y contribuciones.</p>
-      <div class="team">
-        <a class="member" href="https://github.com/camilogamboa2024" target="_blank" rel="noopener noreferrer"><img src="https://github.com/camilogamboa2024.png" alt="Foto de camilogamboa2024" loading="lazy" decoding="async" />camilogamboa2024</a>
-        <a class="member" href="https://github.com/Stiben24435-0" target="_blank" rel="noopener noreferrer"><img src="https://github.com/Stiben24435-0.png" alt="Foto de Stiben24435-0" loading="lazy" decoding="async" />Stiben24435-0</a>
-        <a class="member" href="https://github.com/CamilaU14" target="_blank" rel="noopener noreferrer"><img src="https://github.com/CamilaU14.png" alt="Foto de CamilaU14" loading="lazy" decoding="async" />CamilaU14</a>
+    <section class="sentinel-section" id="seguridad">
+      <img
+        class="sentinel-background"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3BNJRZjDujnIj7-SC17snO8nNiJJenosw2PRTX0PZG1HCyOVylGKBeD1LMtAR8TOlfvo3UDF5fghlOkM_y9baNyWgqyL-R4H8c1a2q24xXNnOyA27Ax2Yv0_Je_gQbCaE3SXjAuu_oyjOofG1NpZFApjJEf-VMDSo1bw-JucM08PdWgjvcxrydv7sceSC4EOJ4-9I1dYtVQCkeCMknh7zKbaFwrrQ7-GoW3iG_A1xkH05ho_52uqTn2S4I1psRWZF7fPiXZGkFds"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+      />
+
+      <div class="container sentinel-grid">
+        <div class="sentinel-copy">
+          <span class="sentinel-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2l7 3v6c0 4.97-3.05 9.29-7 11-3.95-1.71-7-6.03-7-11V5l7-3z" fill="currentColor"/>
+            </svg>
+            MÓDULO SENTINEL
+          </span>
+
+          <h2>
+            <span>Seguridad Ofensiva</span>
+            <span>&amp; Cumplimiento</span>
+            <span>DIAN</span>
+          </h2>
+
+          <p>No solo facturamos; protegemos la integridad de su información financiera. Dymanic utiliza estándares de seguridad de grado bancario para asegurar que cada transacción sea inalterable y privada.</p>
+
+          <div class="sentinel-features">
+            <article class="sentinel-feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17 8h-1V6a4 4 0 1 0-8 0v2H7a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2zm-6 0V6a2 2 0 1 1 4 0v2h-4zm1 8.73V18h2v-1.27a2 2 0 1 0-2 0z" fill="currentColor"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Encriptación End-to-End</h3>
+                <p>Datos cifrados en reposo y tránsito bajo estándares AES-256.</p>
+              </div>
+            </article>
+
+            <article class="sentinel-feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2l7 3v6c0 4.97-3.05 9.29-7 11-3.95-1.71-7-6.03-7-11V5l7-3zm0 5a3 3 0 0 0-3 3c0 1.3.84 2.4 2 2.82V17h2v-4.18A2.99 2.99 0 0 0 15 10a3 3 0 0 0-3-3z" fill="currentColor"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Sentinel Threat Detection</h3>
+                <p>Monitoreo activo 24/7 contra accesos no autorizados y ataques de inyección.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="sentinel-panel">
+          <div class="sentinel-image-frame">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaiwxlvjsmLoTgDHigjXCjt12FkLlsDnJgULLpqablSm_j1UlZLIT78AP3dVo6Tq-szxYyTB-rf3gE2-OJR7xqJBGJTf7My1HzCy2CWcmddRH_5uw1DhCmONvRexWxUYz5vx1E0dS6hIruBfRQ4T0n832rWQu1cJtP7jP2_PIPLAoj8LXhfAu_9MBN3sQNwOZoEnnLxFZufztkMaXZzpY0YTigVuqOdNp9bZSLIjJEZ1ahEs3-WfyHxZeYaT8QH_v7dGFFaXDPe7E"
+              alt="Sentinel Security"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="system-status">
+              <div class="system-status__label">ESTADO DEL SISTEMA</div>
+              <div class="system-status__row">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span>Sentinel: Active &amp; Protected</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <div id="equipo" class="anchor-target" aria-hidden="true"></div>
   </main>
 
-  <footer>
-    <div class="footer-wrap">© 2026 Dymanic SAS. Sitio corporativo con hardening de seguridad y checklist productivo.</div>
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div class="footer-copy">
+        <div class="footer-brand">Dymanic SAS</div>
+        <p>© 2024 Dymanic SAS. DIAN Compliant Inventory &amp; Invoicing.</p>
+      </div>
+
+      <div class="footer-links" aria-label="Enlaces del pie de página">
+        <a href="#inicio">Privacidad</a>
+        <a href="#inicio">Términos</a>
+        <a class="footer-link--active" href="#seguridad">DIAN Compliance</a>
+        <a href="#equipo">Soporte</a>
+      </div>
+    </div>
   </footer>
 
   <script src="assets/js/main.js" defer></script>
